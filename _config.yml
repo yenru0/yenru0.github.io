@@ -107,11 +107,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "yenru0"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am not yenru0 but I am yenru0."
+  location         : "OTL제국"
+  email            : "yenru0604@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
