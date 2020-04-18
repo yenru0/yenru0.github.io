@@ -318,26 +318,6 @@
   }
 }
 
-.sidebar_cat {
-  display: table-cell;
-  position: relative;
-  vertical-align: middle;
-  margin-top: 15px;
-  padding: 10px;
-  border-radius: $border-radius;
-  background: $background-color;
-  cursor: default;
-  z-index: 30;
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-}
 /*
    Wide Pages
    ========================================================================== */

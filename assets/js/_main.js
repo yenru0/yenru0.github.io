@@ -15,12 +15,9 @@ $(document).ready(function() {
     if (show) {
       // fix
       $(".sidebar").addClass("sticky");
-      $(".side_category").addClass("visible");
-      
     } else {
       // unfix
       $(".sidebar").removeClass("sticky");
-      $(".side_category").removeClass("visible");
     }
   };
 
