@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Swetetten Ghart B-Log"
+title                    : "사실 저는 주하진입니다."
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "yenru0"
@@ -97,11 +97,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am myself."
   location         : "OTL 제국(이었던 곳)"
-  email            :
+  email            : "yenru0604@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:yenru0604@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -129,7 +129,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/yenru0/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
