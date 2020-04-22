@@ -29,3 +29,8 @@ _asset_bundler_cache
 _site
 
 .github
+.idea
+
+./assets/tikzs/*.log
+./assets/tikzs/*.aux
+./assets/tikzs/*.xdv
