@@ -34,3 +34,4 @@ _site
 ./assets/tikzs/*.log
 ./assets/tikzs/*.aux
 ./assets/tikzs/*.xdv
+./assets/tikzs/*.dvi
