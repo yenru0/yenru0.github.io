@@ -1,7 +1,7 @@
 ---
 title: MathJax와 TikzJax
 category: etc
-tags: [HTML, math]
+tags: [HTML, math, python]
 tikzlink: /assets/tikzs/2020-04-21-UseMathIn.md
 ---
 
