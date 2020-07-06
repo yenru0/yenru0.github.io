@@ -31,7 +31,8 @@ _site
 .github
 .idea
 
-./assets/tikzs/*.log
-./assets/tikzs/*.aux
-./assets/tikzs/*.xdv
-./assets/tikzs/*.dvi
+
+assets/tikzs/**/*.log
+assets/tikzs/*.aux
+assets/tikzs/*.xdv
+assets/tikzs/*.dvi
