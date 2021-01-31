@@ -1,7 +1,7 @@
 ---
 title: 몬테카를로 방법
-category: []
-tag: 
+category: [Math]
+tag: [python, numerical]
 ---
 
 몬테 카를로 방법은 **난수를 이용해 함수의 값을 확률적으로 계산하는 방법**이다.
@@ -14,6 +14,7 @@ $x^2+y^2 \leq 1$을 만족하는 모든 $(x,\,y)$의 개수를 세면 된다.
 여기에 4를 곱해주면 원주율 $\pi$가 나온다.
 
 이를 python code로 구현해보면 다음과 같다.
+
 ```python
 import random
 

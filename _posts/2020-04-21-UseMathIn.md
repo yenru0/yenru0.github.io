@@ -1,7 +1,7 @@
 ---
 title: MathJax와 TikzJax
 category: etc
-tags: [HTML, math, python]
+tags: [html, math, python]
 tikzlink: /assets/tikzs/2020-04-21-UseMathIn.md
 ---
 
@@ -72,37 +72,22 @@ $$
 </script>
 ```
 
-## 결론
-이와 같은 일련의 과정을 통하여 `우리`는 수학을 웹사이트에서 마구 굴릴 수 있게 되었다.
-
 
 ## 현실
-TikzJax가 `bundle exec jekyll serve`를 통한 로컬에선 잘 작동이 되어 `commit, push`를 하였다.
-그러나 현실은 TikzJax가 잘 작동은 무슨 되지도 않았다.
+TikzJax가 `bundle exec jekyll serve`, 로컬에선 잘 작동이 되어 커밋하고 푸쉬했는데 github blogs에서는 되지 않았다.
 
 
-### 문제 분석
+### 문제
 
 먼저 `yenru0.github.io`에 들어간 뒤 F12를 눌렀더니 다음과 같은 오류를 보았다.
 ```
 Mixed Content: The page at 'https://yenru0.github.io/etc/UseMathIn/' was loaded over HTTPS, but requested an insecure stylesheet 'http://tikzjax.com/v1/fonts.css'. This request has been blocked; the content must be served over HTTPS.
 ```
-대충 HTTPS에서 HTTP를 로드한 것이 문제인 것 같았다.
+아마 HTTPS에서 HTTP를 로드한 것이 문제인 것 같았다.
 
-그래서 `https://tikzjax.com/v1/tikzjax.js`를 찾고 싶었다. 그러나 그런 주소는 없었다.
-
-## 해결(?)
-애초에 그런 주소가 없으면 그냥 **생 코드**를 집어 넣으면 되지 않을까? 라는 미친 시도를 했다.
-
-하지만 그런 생각과 이상과는 다르게 한번의 시도만에 털렸다.
-솔직히 내가 javascript를 잘하는 것도 아니고 그런 노동을 할 시간도 없기 때문에 다른 방법을 모색해야했다.
 
 ## 생각
-4시간 동안의 삽질을 계속 해보니 새로운 생각이 떠올랐다. 
-'굳이 웹사이트에 tikz 코드 전문을 올릴 필요가 있을까?'
-이렇게 생각해보니 커밋과 푸쉬 하기 전에 한번 마크다운을 읽고 svg파일을 만들면 되지 않을까? 라는 생각을 해보게 되었다.
-
-이런 시도가 처음이었던 것은 아니다. 옛날에 박아둔 `sailview` 때도 tex를 이용해 이러한 시도를 했으니까 말이다.
+커밋과 푸쉬 하기 전에 한번 마크다운을 읽고 svg파일을 만들기로 했다.
 
 ### 재시도
 새로운 파이썬 코드를 만들었다.
@@ -199,8 +184,3 @@ $%%%tikzs$
 ![]({{site.url}}{{page.tikzlink}}.0.svg)
 
 ![]({{site.url}}{{page.tikzlink}}.1.svg)
-
-
-어쨋든 결론적으로 github pages에 tikz를 사용해보았다.
-문제점이 아직 많이 산재해있지만 tikz를 그만큼 쓸것 같지도 않고 MathJax는 제대로 작동하니 일반적인 수식 쓸 때에는
-딱히 문제가 없을 것 같아. 여기서 마무리지어도 될 것 같다.

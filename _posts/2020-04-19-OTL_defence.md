@@ -2,7 +2,7 @@
 title: OTL Defense
 date: 2020-04-19T10:05
 category: Game
-tag: [OTL-Series, unity]
+tag: [otl, unity]
 ---
 
 <center>

@@ -1,7 +1,7 @@
 ---
-title: Display Video In Jupyter
+title: 주피터에서 비디오를 보이게 하는 방법
 category: [Dev, python]
-tag: python, jupyter
+tag: [python, jupyter]
 ---
 
 ## 가장 빠른 방법
@@ -30,14 +30,5 @@ interact(lambda x: display(Image("image/{0}.png".format(x))), x=x)
 ```
 
 다만 이 방법은 재시작을 하거나 다른 곳에서 열게되면 다시한번 리로드가 필요하다는 단점이 있고, vs code, pycharm에서 조금 끊긴다는 단점이 있다.
-
-
-## 결론
-
-둘 다 장단점이 확실한 방법이다.
-
-보통 jupyter를 웹에서 실행하면 코드 자동완성이 부족하고, pycharm에서 실행하게 되면 비디오를 못보니까 이게 바로 균형의 수호자 아닐까;;
-
-결국 둘다 병용해서 쓴다;;
 
 
