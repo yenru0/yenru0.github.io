@@ -6,16 +6,22 @@ tag: [python, numerical]
 
 근사적으로 미분 방정식을 푸는 방법으로 오차가 크게 난다.
 
-$$ x(t+h) \approx x(t) + h \times x'(t) $$
+$$
+x(t+h) \approx x(t) + h \times x'(t)
+$$
 
 ## 응용
 위치 p의 업데이트는 속도 v에 대해 다음과 같이,
 
-$$ p = p + v $$
+$$
+p = p + v
+$$
 
 그리고 속도 v의 업데이트는 가속도 a에 대해 다음과 같이,
 
-$$ v = v + a $$
+$$
+v = v + a
+$$
 
 ### 파이썬 구현
 
@@ -23,7 +29,10 @@ $$ v = v + a $$
 
 
 #### 해석적 방법
-이 방법으로 할 경우 속도 $$v(t) = \begin{cases} 2t & \text{ if $0\leq t < 2$} \\ -2t+8  & \text{ if $2 \leq t \leq 4$}\end{cases}$$, 위치 $$p(t) = \begin{cases} t^{2} & \text{ if $0\leq t < 2$} \\ -t^2+8t-8  & \text{ if $2 \leq t \leq 4$}\end{cases}$$이다.
+이 방법으로 할 경우 속도 $$
+v(t) = \begin{cases} 2t & \text{ if $0\leq t < 2$} \\ -2t+8  & \text{ if $2 \leq t \leq 4$}\end{cases}
+$$, 위치
+$$p(t) = \begin{cases} t^{2} & \text{ if $0\leq t < 2$} \\ -t^2+8t-8  & \text{ if $2 \leq t \leq 4$}\end{cases}$$이다.
 
 ```python
 t = np.linspace(0, 4, 1000)
