@@ -11,10 +11,6 @@
 <html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
   
   <head>
-    {% unless page.no_math %}
-      {% include tikzjax_support.html %}
-      {% include mathjax_support.html %}
-    {% endunless %}
     {% include head.html %}
     {% include head/custom.html %}
   </head>
@@ -44,4 +40,8 @@
     {% include scripts.html %}
 
   </body>
+  {% unless page.no_math %}
+      {% include tikzjax_support.html %}
+      {% include mathjax_support.html %}
+    {% endunless %}
 </html>
