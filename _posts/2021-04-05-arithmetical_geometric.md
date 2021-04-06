@@ -4,4 +4,6 @@ category: [Math]
 tag: []
 ---
 
+별건 아닌데,
+
 $$x+y\leq -2\sqrt{xy}\quad(x, y < 0)$$
